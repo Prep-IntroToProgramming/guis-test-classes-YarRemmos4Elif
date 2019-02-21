@@ -10,12 +10,15 @@ public class ChallengeGui{
             @Override
             public void actionPerformed(ActionEvent event){
                 System.out.println("You chose Button 1");
+                button.setText("You clicked!!! click again");
+                
             }
         }
         private class Button2Listener implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent event){
                 System.out.println("You chose Button 2");
+                button2.setText("Click me again!");
             }
         }
   
