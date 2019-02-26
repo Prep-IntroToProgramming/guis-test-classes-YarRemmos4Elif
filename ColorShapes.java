@@ -37,10 +37,11 @@ public class ColorShapes extends JPanel{
     class TimerListener implements ActionListener{//Make a variable that can be either 1 or -1
         @Override
         public void actionPerformed(ActionEvent event){
+            int direction;
             xPosition++;
             yPosition++;
             ColorShapes.this.repaint();
-            if(xPosition==300){
+            /*if(xPosition>f.getSize()){
                 xPosition--;
             } else if(xPosition==0){
                 xPosition++;
@@ -50,7 +51,7 @@ public class ColorShapes extends JPanel{
 
             } else if(yPosition==0){
                 yPosition++;
-            }
+            }*/
         }
     }
 }
