@@ -15,4 +15,14 @@ public class ImagePanel extends JPanel
 
 
     }
+    /*@Override
+    public Dimension getPreferredSize(){
+        
+        if(i!=null){
+            return new Dimension(i.getIconWidth(), i.getIconHeight());
+        } else{
+            return super.getPreferredSize();
+        }
+    }*/
+    
 }
