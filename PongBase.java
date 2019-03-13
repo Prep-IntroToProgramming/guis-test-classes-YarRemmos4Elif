@@ -12,10 +12,10 @@ public class PongBase
     int x;
     int y;
 
-    public void PongBase() {
+    public  PongBase() {
         myTimer.start();
         frame.add(panel);
-        frame.setSize(300,300);
+        frame.setSize(600,600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         x = frame.getWidth()/2;
         y = frame.getHeight() - 30;
@@ -28,12 +28,15 @@ public class PongBase
         PongBase pb = new PongBase();
     }
     class TListener implements ActionListener {
-        Point position = panel.getMousePosition();
+        
         @Override
         public void actionPerformed(ActionEvent e){
+            
+            Point position = panel.getMousePosition();
             if(panel.getMousePosition()!= null){
-               // x = position.getX();
-            }else{
+                
+                x =(int) position.getX();
+                frame.repaint();
             }
 
             
