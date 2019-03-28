@@ -7,10 +7,10 @@ import java.awt.event.*;
 public class GuiMouse implements MouseListener{
     JFrame frame = new JFrame();
     DrawPanel panel = new DrawPanel();
-    Timer time = new Timer();
+    //Timer time = new Timer();
     public GuiMouse() {
         panel.addMouseListener(this );
-        time.addTimerListener(this);
+        //time.addTimerListener(this);
         frame.add(panel);
         frame.setSize(300, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,13 +18,13 @@ public class GuiMouse implements MouseListener{
     }
         
     public static void main(String[] args) {
-        time.start();
+        //time.start();
         GuiMouse gui = new GuiMouse();
     }
     @Override
     public void mouseClicked(MouseEvent e){
         System.out.println(e.getX()+"," +" "+e.getY());
-        time.stop();
+        //time.stop();
     }
     public void mouseEntered(MouseEvent e) {
         System.out.println("Mouse is in");
